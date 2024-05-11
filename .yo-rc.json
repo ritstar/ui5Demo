@@ -1,0 +1,17 @@
+{
+  "generator-ui5-app": {
+    "namespace": "ui5Demo",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.123.0",
+    "author": "Ritesh Jha (RitstaR)",
+    "initrepo": true,
+    "appId": "ui5Demo",
+    "appURI": "ui5Demo",
+    "cdnDomain": "sdk.openui5.org",
+    "defaultTheme": "sap_horizon",
+    "qunitCoverageFile": "qunit-coverage-istanbul.js",
+    "gte1_98_0": true,
+    "gte1_104_0": true,
+    "setupCompleted": true
+  }
+}
