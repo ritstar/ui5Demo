@@ -8,7 +8,8 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 		onInit : function (){
 			var oModel = new sap.ui.model.json.JSONModel({
 				userForm: {
-					firstName: "Ritesh"
+					firstName: "",
+					lastname: ""
 				}
 			});
 			this.getView().setModel(oModel);
@@ -20,11 +21,10 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 			console.log(oModel.getProperty("/userForm/firstName"));
 			if (oModel) {
 				var firstName = oModel.getProperty("/userForm/firstName"); // Ensure the property name matches what you're trying to access
-				if (firstName) {
-					MessageBox.show(firstName);
-				} else {
-					MessageBox.show("First name is not set.");
-				}
+				var lastName = oModel.getProperty("/userForm/lastName");
+				var fullName = firstName.trim().charAt(0).toUpperCase() + firstName.slice(1) + " " + lastName.trim().charAt(0).toUpperCase() + lastName.slice(1);
+				MessageBox.show(fullName);
+				
 			} else {
 				MessageBox.show("Model is not available.");
 			}
