@@ -1,0 +1,43 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+    <Dialog id="fragDialog" title="Dialog Fragment">
+        <content>
+            <VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Company Name" />
+				<Text id="nameText" text="{CompanyName}" />
+				<Label text="Customer ID" />
+				<Text text="{CustomerID}" />
+				<Label text="Phone" />
+				<Text text="{Phone}" />
+				<Label text="Country" />
+				<Text id="countryText" text="{Country}" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+        </content>
+        <beginButton>
+            <Button text="Ok" press="onCloseDialog"/>
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>

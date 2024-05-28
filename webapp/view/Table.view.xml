@@ -1,0 +1,102 @@
+<mvc:View
+    controllerName="ui5Demo.controller.Table"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    xmlns:unified="sap.ui.unified"
+    xmlns:t="sap.ui.table"
+    core:require="{
+        formatter: 'ui5Demo/model/formatter'
+    }"
+>
+    <Page
+        title="Table Route"
+        id="page"
+        class="sapUiContentPadding"
+    >
+        <content>
+            <t:Table
+                id="idProductsTable"
+                alternateRowColors="true"
+                rows="{'path' : '/Customers' }"
+                ariaLabelledBy="title"
+                enableBusyIndicator="true"
+            >
+                <t:extension>
+                    <HBox class="sapUiSmallMargin">
+                        <items>
+                            <Title
+                                text="Customer Details"
+                                titleStyle="H3"
+                            />
+                        </items>
+                    </HBox>
+                    <OverflowToolbar style="Clear">
+                        <content>
+                            <Title
+                                text="Customers"
+                                level="H2"
+                            />
+                            <ToolbarSpacer />
+                            <SearchField
+                                id="search"
+                                width="15rem"
+                                search="filterGlobally"
+                            />
+                        </content>
+                    </OverflowToolbar>
+                </t:extension>
+                <t:noData>
+                    <Image src="../presets/loading.svg"></Image>
+                </t:noData>
+                <t:columns>
+                    <t:Column width="auto">
+                        <Label text="Customer Name" />
+                        <t:template>
+                            <Text
+                                text="{CompanyName}"
+                                wrapping="false"
+                            />
+                        </t:template>
+                    </t:Column>
+                    <t:Column width="auto">
+                        <Label text="Country" />
+                        <t:template>
+                            <ObjectStatus
+                                text="{Country}"
+                                state="{
+                                            'path' : 'Country',
+                                            'formatter': '.formatter.weightState'
+                                          }"
+                            />
+                        </t:template>
+                    </t:Column>
+                    <t:Column width="auto">
+                        <Label text="City" />
+                        <t:template>
+                            <Text
+                                text="{City}"
+                                wrapping="false"
+                            />
+                        </t:template>
+                    </t:Column>
+                    <t:Column
+                        width="auto"
+                        hAlign="Center"
+                    >
+                        <Label text="Action" />
+                        <t:template>
+                            <Button
+                                text="Show Full"
+                                press="showFullDetail"
+                            />
+                        </t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+        </content>
+    </Page>
+</mvc:View>

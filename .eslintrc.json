@@ -1,5 +1,6 @@
 {
 	"root": true,
+	"parser": "babel-eslint",
 	"env": {
 		"browser": true
 	},
@@ -55,4 +56,5 @@
 		"no-shadow": 0,
 		"no-irregular-whitespace": 0
 	}
+	
 }
