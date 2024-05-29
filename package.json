@@ -21,7 +21,7 @@
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.24.6",
-		"@ui5/cli": "^3.6.1",
+		"@ui5/cli": "^3.10.3",
 		"@ui5/middleware-code-coverage": "^1.1.0",
 		"@wdio/cli": "^8.36.1",
 		"@wdio/local-runner": "^8.36.1",
@@ -39,7 +39,6 @@
 	},
 	"dependencies": {
 		"@sap-ux/ui5-middleware-fe-mockserver": "^2.2.42",
-		"@sap/ux-ui5-tooling": "^1.13.5",
-		"ui5-middleware-cfdestination": "^3.3.11"
+		"@sap/ux-ui5-tooling": "^1.13.5"
 	}
 }

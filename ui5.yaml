@@ -15,7 +15,7 @@ server:
       afterMiddleware: compression
     - name: ui5-middleware-livereload
       afterMiddleware: compression
-    - name: fiori-tools-proxy
+    - name: fiori-tools-proxy  #To setup the External url as Odata service, a proxy should be created. NPM Pkg @sap-ux/ui5-middleware-fe-mockserver
       afterMiddleware: compression
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
