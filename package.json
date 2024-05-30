@@ -39,6 +39,7 @@
 	},
 	"dependencies": {
 		"@sap-ux/ui5-middleware-fe-mockserver": "^2.2.42",
-		"@sap/ux-ui5-tooling": "^1.13.5"
+		"@sap/ux-ui5-tooling": "^1.13.5",
+		"vercel": "^34.2.3"
 	}
 }
