@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/northwind",
+        "destination": "https://services.odata.org"
+      }
+    ]
+  }
