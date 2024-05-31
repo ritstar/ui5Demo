@@ -1,6 +1,6 @@
 # UI5 Application ui5Demo
 
-Insert the purpose of this project and some interesting info here...
+This is a demo UI5 app. Leveraged all features that SAP provides. Like- Routing, Fragment, Dialogs, MessageBox, ui.Table, Odata, etc.
 
 ## Description
 
