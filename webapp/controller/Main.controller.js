@@ -28,6 +28,9 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 			} else {
 				MessageBox.show("Model is not available.");
 			}
+		},
+		goToTableRoute: function() {
+			this.getRouter().navTo("table");
 		}
 	});
 });

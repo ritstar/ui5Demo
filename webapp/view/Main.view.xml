@@ -81,7 +81,17 @@
                         </f:FormContainer>
                     </f:formContainers>
                 </f:Form>
-                
+                <HBox
+                    class="sapUiSmallMargin"
+                    width="100%"
+                    justifyContent="Center"
+                >
+                    <Link
+                        text="Go to /table route"
+                        press="goToTableRoute"
+                        textAlign="Center"
+                    />
+                </HBox>
             </VBox>
         </content>
     </Page>
